@@ -154,7 +154,7 @@
       ];
       volumes = [
         "/var/run/podman/podman.sock:/var/run/docker.sock:ro"
-        "/home/frabricant-admin/fabricant-vaultwarden/traefik-data/letsencrypt:/letsencrypt:z"
+        "/home/fabricant-admin/fabricant-vaultwarden/traefik-data/letsencrypt:/letsencrypt:z"
       ];
       cmd = [
         "--log.level=DEBUG"
