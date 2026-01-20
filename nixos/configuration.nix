@@ -6,6 +6,7 @@
 
 let
   agenixSrc = builtins.fetchTarball "https://github.com/ryantm/agenix/archive/refs/heads/main.tar.gz";
+in
 {
   imports =
     [ # Include the results of the hardware scan.
