@@ -11,7 +11,7 @@ in
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      (import agenixSrc)   # ← agenix NixOS module
+      "${agenixSrc}/modules/age.nix"
     ];
 
   # Bootloader.
@@ -102,6 +102,7 @@ in
     git
     tmux
   #  wget
+    (pkgs.callPackage "${agenixSrc}/pkgs/agenix.nix" {})
     #agenix
     #ryantm/agenix
   ];
